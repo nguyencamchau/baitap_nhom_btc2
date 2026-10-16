@@ -3,7 +3,14 @@
 #define MAX 100 // Định nghĩa số lượng phần tử tối đa của mảng
 
 // 1. Hàm nhập dãy số nguyên
-void nhapDaySo(int a[], int n);
+void nhapDaySo(int a[], int n) {
+    printf("Nhap day so nguyen:\n");
+
+    for (int i = 0; i < n; i++) {
+        printf("Nhap so nguyen thu %d: ", i + 1);
+        scanf("%d", &a[i]);
+    }
+}
 
 // 2. Hàm xuất dãy số nguyên
 void xuatDaySo(int a[], int n) ;
