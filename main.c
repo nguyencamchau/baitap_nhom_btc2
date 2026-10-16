@@ -13,7 +13,14 @@ void nhapDaySo(int a[], int n) {
 }
 
 // 2. Hàm xuất dãy số nguyên
-void xuatDaySo(int a[], int n) ;
+void xuatDaySo(int a[], int n) 
+{
+    printf(" Day so nguyen: ");
+    for(int i = 0; i<n; i++){
+        printf("  %d \t",a[i]);
+    }
+    printf("\n");
+}
 
 // 3. Hàm sắp xếp dãy số tăng dần (Bubble Sort)
 void sapXepTangDan(int a[], int n) ;
