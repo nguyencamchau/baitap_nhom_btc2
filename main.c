@@ -10,7 +10,20 @@ void xuatDaySo(int a[], int n) ;
 
 // 3. Hàm sắp xếp dãy số tăng dần (Bubble Sort)
 void sapXepTangDan(int a[], int n) ;
-
+{
+    for (int i = 0; i < n - 1; i++)
+    {
+        for (int j = 0; j < n - 1 - i; j++)
+        {
+            if (a[j] > a[j + 1])
+            {
+                int temp = a[j];
+                a[j] = a[j + 1];
+                a[j + 1] = temp;
+            }
+        }
+    }
+}
 // 4. Hàm tìm kiếm số x trong mảng (Trả về vị trí đầu tiên tìm thấy, hoặc -1 nếu không thấy)
 int timKiemX(int a[], int n, int x) {
     for (int i = 0; i < n; i++) {
