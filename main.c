@@ -12,7 +12,14 @@ void xuatDaySo(int a[], int n) ;
 void sapXepTangDan(int a[], int n) ;
 
 // 4. Hàm tìm kiếm số x trong mảng (Trả về vị trí đầu tiên tìm thấy, hoặc -1 nếu không thấy)
-int timKiemX(int a[], int n, int x) ;
+int timKiemX(int a[], int n, int x) {
+    for (int i = 0; i < n; i++) {
+        if (a[i] == x) {
+            return i;   
+        }
+    }
+    return -1;        
+}
 
 int main() {
     int a[MAX]; // Khai báo mảng số nguyên có tối đa 100 phần tử
